@@ -1,7 +1,5 @@
 import React from "react";
-import { Text, View, BackHandler, StyleSheet } from 'react-native'
-import { SafeAreaView } from "react-native-safe-area-context";
-import { ScrollView } from "react-native-web";
+import { Text, View, BackHandler, StyleSheet, Image, SafeAreaView, ScrollView } from 'react-native'
 import HomeCategory from "../Components/HomeCategory";
 
 
@@ -16,9 +14,22 @@ const HomeScreen = () => {
                         showsHorizontalScrollIndicator={false}
                     >
                         
-                        <HomeCategory
-                            imageUri={"https://cdn-fnknc.nitrocdn.com/jwqHRGAzpUgGskUSHlppNQzwuXgXIKwg/assets/static/optimized/rev-ea281f4/wp-content/uploads/2021/12/luca-faloni-denim-shirt.jpeg"}
-                            />
+                        <HomeCategory 
+                            imageUri={require("../assets/shirt.jpg")}
+                            name="Shirts"
+                        />
+                        <HomeCategory 
+                            imageUri={require("../assets/dress.jpeg")}
+                            name="Dress"
+                        />
+                        <HomeCategory 
+                            imageUri={require("../assets/jeans.jpg")}
+                            name="Jeans"
+                        />
+                        <HomeCategory 
+                            imageUri={require("../assets/hoodie.jpg")}
+                            name="Hoodie"
+                        />
                         
                     </ScrollView>
                 </View>

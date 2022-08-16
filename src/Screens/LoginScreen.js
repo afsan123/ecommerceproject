@@ -1,11 +1,7 @@
 import React from "react";
 import { Text, View, StyleSheet, SafeAreaView, Image, TextInput, TouchableOpacity } from 'react-native'
 import { MaterialIcons } from '@expo/vector-icons';
-import { Icon } from "react-native-elements";
 import { AntDesign } from '@expo/vector-icons';
-import { 
-    Roboto_700Bold,
-  } from '@expo-google-fonts/roboto'
 
 
 const LoginScreen = ({ navigation }) => {
@@ -18,7 +14,6 @@ const LoginScreen = ({ navigation }) => {
                 </View>
                 <Text 
                     style={{
-                        fontFamily: 'Roboto_700Bold', 
                         fontSize: 28,
                         fontWeight: '700',
                         textAlign: 'left',
